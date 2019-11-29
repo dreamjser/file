@@ -1,0 +1,24 @@
+{
+  "name": "@dreamjser/file",
+  "version": "1.0.0",
+  "description": "file module contain mkdir and copy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamjser/file.git"
+  },
+  "keywords": [
+    "file",
+    "copy",
+    "mkdir"
+  ],
+  "author": "dreamjser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreamjser/file/issues"
+  },
+  "homepage": "https://github.com/dreamjser/file#readme"
+}
