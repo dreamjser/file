@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const copyFile = (src, dst, param) => {
+const copyFile = (src, dst, param, cb) => {
   let paths = fs.readdirSync(src);
   paths.forEach((path) => {
     const _src = src + '/' + path;
@@ -23,11 +23,11 @@ const copyFile = (src, dst, param) => {
             });
           }
 
-          fs.writeFile(_dst, data, () => {});
+          fs.writeFile(_dst, data, cb);
         });
       } else if (stats.isDirectory()) {
         mkdirs(_dst, () => {
-          copyFile(_src, _dst, param);
+          copyFile(_src, _dst, param, cb);
         });
       }
     });
