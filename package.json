@@ -1,6 +1,6 @@
 {
   "name": "@dreamjser/file",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "file module contain mkdir and copy",
   "main": "index.js",
   "scripts": {
