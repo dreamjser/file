@@ -23,7 +23,7 @@ const copyFile = (src, dst, param, cb) => {
             });
           }
 
-          fs.writeFile(_dst, data);
+          fs.writeFile(_dst, data, () => {});
         });
       } else if (stats.isDirectory()) {
         mkdirs(_dst, () => {
